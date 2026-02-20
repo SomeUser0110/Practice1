@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0e882 0%, #376038 100%);
+}
+
+.product-card {
+  background: white;
+  border-radius: 45px;           /* Увеличено с 12px */
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.product-card__image {
+  width: 100%;
+  height: 420px;                  /* Увеличено с 220px */
+  overflow: hidden;
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card__image img:hover {
+  transform: scale(1.05);
+}
+
+.product-card__title {
+  margin: 24px 24px 12px;         /* Увеличено с 16px 16px 8px */
+  font-size: 2rem;                 /* Увеличено с 1.5rem */
+  color: #000000;
+}
+
+.product-card__description {
+  margin: 0 24px 24px;             /* Увеличено с 0 16px 16px */
+  color: #000000;
+  line-height: 1.6;                /* Увеличено с 1.5 */
+  font-size: 1.1rem;               /* Увеличено с 0.95rem */
+}
+
+.product-card__footer {
+  padding: 24px;                   /* Увеличено с 16px */
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card__price {
+  font-size: 2rem;                 /* Увеличено с 1.5rem */
+  font-weight: bold;
+  color: #1f4913;                   /* Изменено с #ff6b6b на зеленый */
+}
+
+.product-card__button {
+  padding: 14px 28px;              /* Увеличено с 10px 20px */
+  background: #1f4913;              /* Изменено с #ff6b6b на зеленый */
+  color: white;
+  border: none;
+  border-radius: 12px;              /* Увеличено с 8px */
+  font-size: 1.2rem;                /* Увеличено с 1rem */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card__button:hover {
+  background: #27ae60;              /* Темнее зеленый */
+}
+
+.product-card__button:active {
+  transform: translateY(1px);
+}
